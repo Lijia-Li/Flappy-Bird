@@ -37,7 +37,7 @@ public class Flappy
         for (int i = 0; i < 5; i ++) {
             int newUpperBound = rand.nextInt(568 - 100);
             Hole hole = new Hole(1024 + i * hole_dis, 0, newUpperBound, 70, new Color(33, 194, 33));
-            holes.add();
+            holes.add(hole);
         }
 
     }
@@ -125,7 +125,6 @@ public class Flappy
         g.drawString(scr, 60,20);
         g.drawString("Highest Score:",20, 40);
         g.drawString(high_scr, 115,40);
-        g.
         this.bird.paint(g);
         for(Hole a: this.holes){
             a.paint(g);
